@@ -1,9 +1,5 @@
 /* Styles spécifiques à la page About */
 
-.about-content {
-    background-color: var(--bg-color);
-}
-
 .about-intro {
     text-align: center;
     margin-bottom: 3rem;
@@ -23,7 +19,6 @@
 
 .skill-category {
     padding: 1.5rem;
-    background-color: var(--bg-light);
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
 }

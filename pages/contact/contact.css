@@ -30,7 +30,6 @@
 }
 
 .contact-form {
-    background-color: var(--bg-light);
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: var(--shadow);

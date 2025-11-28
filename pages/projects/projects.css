@@ -1,9 +1,5 @@
 /* Styles spécifiques à la page Projects */
 
-.projects {
-    background-color: var(--bg-light);
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -12,7 +8,6 @@
 }
 
 .project-card {
-    background-color: var(--bg-color);
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: var(--shadow);

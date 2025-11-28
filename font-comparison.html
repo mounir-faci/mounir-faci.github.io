@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison des polices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f3f4f6;
+            padding: 3rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #1f2937;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .font-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .font-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .font-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        
+        .font-tag {
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .font-inter { font-family: 'Manrope', sans-serif; }
+        .font-space { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-outfit { font-family: 'Lexend', sans-serif; }
+        .font-poppins { font-family: 'Inter', sans-serif; }
+        .font-sora { font-family: 'Urbanist', sans-serif; }
+        .font-dm { font-family: 'Outfit', sans-serif; }
+        
+        .sample-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .sample-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .sample-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sample-subheading {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sample-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+        
+        .sample-nav {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .sample-nav-item {
+            padding: 0.75rem 1.5rem;
+            background: #f3f4f6;
+            border-radius: 2rem;
+            font-weight: 500;
+            color: #1f2937;
+        }
+        
+        .sample-nav-item.active {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .characteristics {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .characteristic {
+            background: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Polices Sans-Serif sobres avec caractère</h1>
+        
+        <div class="comparison-grid">
+            <!-- Option 1: Manrope -->
+            <div class="font-card font-inter">
+                <div class="font-header">
+                    <h2 class="font-name">Manrope</h2>
+                    <span class="font-tag">Option 1</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">🎯 Sobre</span>
+                    <span class="characteristic">🔤 Géométrique douce</span>
+                    <span class="characteristic">💎 Élégante</span>
+                    <span class="characteristic">🌟 Moderne</span>
+                    <span class="characteristic">✨ Harmonieuse</span>
+                </div>
+            </div>
+            
+            <!-- Option 2: Plus Jakarta Sans -->
+            <div class="font-card font-space">
+                <div class="font-header">
+                    <h2 class="font-name">Plus Jakarta Sans</h2>
+                    <span class="font-tag">Option 2</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">🎨 Créative</span>
+                    <span class="characteristic">📐 Géométrique</span>
+                    <span class="characteristic">💼 Pro-casual</span>
+                    <span class="characteristic">🌈 Polyvalente</span>
+                    <span class="characteristic">✨ Contemporaine</span>
+                </div>
+            </div>
+            
+            <!-- Option 3: Lexend -->
+            <div class="font-card font-outfit">
+                <div class="font-header">
+                    <h2 class="font-name">Lexend</h2>
+                    <span class="font-tag">Option 3</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">👁️ Lisible++</span>
+                    <span class="characteristic">🎯 Sobre</span>
+                    <span class="characteristic">🔬 Scientifique</span>
+                    <span class="characteristic">💎 Épurée</span>
+                    <span class="characteristic">✨ Unique</span>
+                </div>
+            </div>
+            
+            <!-- Option 4: Inter -->
+            <div class="font-card font-poppins">
+                <div class="font-header">
+                    <h2 class="font-name">Inter</h2>
+                    <span class="font-tag">Option 4</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">✨ Moderne</span>
+                    <span class="characteristic">📐 Géométrique</span>
+                    <span class="characteristic">👁️ Très lisible</span>
+                    <span class="characteristic">💼 Professionnelle</span>
+                    <span class="characteristic">🎯 Versatile</span>
+                </div>
+            </div>
+            
+            <!-- Option 5: Urbanist -->
+            <div class="font-card font-sora">
+                <div class="font-header">
+                    <h2 class="font-name">Urbanist</h2>
+                    <span class="font-tag">Option 5</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">🌆 Urbaine</span>
+                    <span class="characteristic">🎨 Stylée</span>
+                    <span class="characteristic">✨ Élégante</span>
+                    <span class="characteristic">🔄 Équilibrée</span>
+                    <span class="characteristic">💫 Sophistiquée</span>
+                </div>
+            </div>
+            
+            <!-- Option 6: Outfit -->
+            <div class="font-card font-dm">
+                <div class="font-header">
+                    <h2 class="font-name">Outfit</h2>
+                    <span class="font-tag">Option 6</span>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Titre principal</div>
+                    <h1 class="sample-heading">Mounir Faci</h1>
+                    <p class="sample-subheading">Développeur & Architecte Applicatif</p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Paragraphe</div>
+                    <p class="sample-text">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives. Mon expertise 
+                        couvre JavaScript, TypeScript, React et l'architecture microservices.
+                    </p>
+                </div>
+                
+                <div class="sample-section">
+                    <div class="sample-label">Navigation</div>
+                    <div class="sample-nav">
+                        <div class="sample-nav-item active">Accueil</div>
+                        <div class="sample-nav-item">À propos</div>
+                        <div class="sample-nav-item">Projets</div>
+                        <div class="sample-nav-item">Contact</div>
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <span class="characteristic">🌟 Élégante</span>
+                    <span class="characteristic">🎯 Accessible</span>
+                    <span class="characteristic">😊 Friendly</span>
+                    <span class="characteristic">🔄 Ronde</span>
+                    <span class="characteristic">💎 Équilibrée</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -25,42 +25,105 @@
     <link rel="canonical" href="https://mounir-faci.github.io/">
 </head>
 <body>
-    <div id="header-placeholder"></div>
     <div id="nav-placeholder"></div>
     
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Mounir Faci</h1>
-                <p class="subtitle">Développeur & Architecte Applicatif</p>
-                <a href="/pages/contact/contact.html" class="cta-button">Me contacter</a>
-            </div>
-        </section>
-        
-        <section class="about-preview">
-            <div class="container">
-                <h2>À propos</h2>
-                <p>Passionné par l'architecture logicielle et le développement web moderne, je conçois des solutions techniques robustes et évolutives.</p>
-                <a href="/pages/about/about.html" class="link-button">En savoir plus</a>
-            </div>
-        </section>
-        
-        <section class="projects-preview">
-            <div class="container">
-                <h2>Projets récents</h2>
-                <div class="projects-grid">
-                    <!-- Les projets seront ajoutés ici -->
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Mounir Faci</h1>
+                    <p class="subtitle">Développeur & Architecte Applicatif</p>
+                    <p class="description">
+                        Passionné par l'architecture logicielle et le développement web moderne, 
+                        je conçois des solutions techniques robustes et évolutives.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="/pages/contact/contact.html" class="cta-button">Me contacter</a>
+                        <a href="/pages/projects/projects.html" class="cta-button-secondary">Voir mes projets</a>
+                    </div>
                 </div>
-                <a href="/pages/projects/projects.html" class="link-button">Voir tous les projets</a>
+                
+                <div class="hero-right">
+                    <div class="hero-visual">
+                        <img src="/assets/images/hero-illustration.svg" alt="Web Development Illustration">
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <section class="recommendations">
+            <div class="container">
+                <div class="recommendations-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                            <div class="recommendation-card">
+                                <div class="recommendation-header">
+                                    <div class="avatar">
+                                        <img src="https://ui-avatars.com/api/?name=Jean+Dupont&background=667eea&color=fff&size=80" alt="Jean Dupont">
+                                    </div>
+                                    <div class="recommendation-info">
+                                        <h3>Jean Dupont</h3>
+                                        <p class="role">Chef de Projet chez TechCorp</p>
+                                    </div>
+                                </div>
+                                <p class="recommendation-text">
+                                    Mounir est un développeur exceptionnel avec une expertise remarquable en architecture logicielle. 
+                                    Sa capacité à comprendre les besoins métier et à les traduire en solutions techniques robustes 
+                                    est vraiment impressionnante. Je recommande vivement ses services.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="recommendation-card">
+                                <div class="recommendation-header">
+                                    <div class="avatar">
+                                        <img src="https://ui-avatars.com/api/?name=Marie+Martin&background=764ba2&color=fff&size=80" alt="Marie Martin">
+                                    </div>
+                                    <div class="recommendation-info">
+                                        <h3>Marie Martin</h3>
+                                        <p class="role">CTO chez StartupInnovante</p>
+                                    </div>
+                                </div>
+                                <p class="recommendation-text">
+                                    J'ai eu le plaisir de travailler avec Mounir sur plusieurs projets complexes. 
+                                    Son approche méthodique et sa maîtrise des technologies modernes ont été déterminantes 
+                                    pour la réussite de nos applications. Un vrai professionnel !
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="recommendation-card">
+                                <div class="recommendation-header">
+                                    <div class="avatar">
+                                        <img src="https://ui-avatars.com/api/?name=Pierre+Bernard&background=f093fb&color=fff&size=80" alt="Pierre Bernard">
+                                    </div>
+                                    <div class="recommendation-info">
+                                        <h3>Pierre Bernard</h3>
+                                        <p class="role">Directeur Technique chez WebAgency</p>
+                                    </div>
+                                </div>
+                                <p class="recommendation-text">
+                                    Mounir a su apporter une réelle valeur ajoutée à notre équipe. 
+                                    Ses compétences en développement full-stack et son sens du détail 
+                                    nous ont permis de livrer des projets de haute qualité dans les délais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-nav prev" aria-label="Précédent">‹</button>
+                    <button class="slider-nav next" aria-label="Suivant">›</button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </section>
+       
     </main>
     
     <div id="footer-placeholder"></div>
     
-    <script src="/components/header/header.js"></script>
     <script src="/components/navigation/navigation.js"></script>
     <script src="/components/footer/footer.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/pages/home/home.js"></script>
 </body>
 </html>

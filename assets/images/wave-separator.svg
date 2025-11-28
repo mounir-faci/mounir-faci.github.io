@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.12" />
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.08" />
+        </linearGradient>
+    </defs>
+    <path d="M 0,400 Q 360,320 720,400 T 1440,400 L 1440,0 L 0,0 Z" 
+          fill="url(#blueGradient)"/>
+    <path d="M 0,420 Q 360,300 720,420 T 1440,420 L 1440,0 L 0,0 Z" 
+          fill="url(#blueGradient)" 
+          opacity="0.6"/>
+</svg>
