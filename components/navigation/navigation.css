@@ -21,6 +21,10 @@
     transition: all 0.3s ease;
 }
 
+[data-theme="dark"] .nav-container {
+    background-color: rgba(31, 41, 55, 0.98);
+}
+
 .nav-container:hover {
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -61,7 +65,57 @@
 .nav-right {
     display: flex;
     align-items: center;
+    gap: 1rem;
     padding-right: 0.25rem;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(37, 99, 235, 0.08);
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.theme-icon.sun-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.theme-icon.moon-icon {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+[data-theme="dark"] .theme-icon.sun-icon {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+[data-theme="dark"] .theme-icon.moon-icon {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .nav-list {
@@ -96,10 +150,16 @@
     padding: 0.75rem 1.5rem;
     border-radius: 2rem;
     transition: all 0.3s ease;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.nav-link i {
+    font-size: 1rem;
 }
 
 .nav-link:hover {

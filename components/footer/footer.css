@@ -1,10 +1,12 @@
 /* ===== Footer Component ===== */
 .site-footer {
-    background-color: var(--text-color);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
     padding: 2rem 0;
     margin-top: auto;
     flex-shrink: 0;
+    border-top: 1px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .footer-content {
@@ -17,7 +19,7 @@
 
 .footer-info p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-light);
 }
 
 .social-links {
@@ -27,9 +29,16 @@
 }
 
 .social-links a {
-    color: white;
+    color: var(--text-color);
     font-weight: 500;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links a i {
+    font-size: 1.1rem;
 }
 
 .social-links a:hover {

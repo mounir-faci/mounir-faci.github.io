@@ -84,10 +84,18 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+[data-theme="dark"] .cta-button-secondary {
+    background-color: rgba(31, 41, 55, 0.98);
+}
+
 .cta-button-secondary:hover {
     background-color: white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
+}
+
+[data-theme="dark"] .cta-button-secondary:hover {
+    background-color: rgba(31, 41, 55, 1);
 }
 
 
@@ -243,10 +251,19 @@ body {
     justify-content: space-between;
 }
 
+[data-theme="dark"] .recommendation-card {
+    background: rgba(31, 41, 55, 0.35);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
 .recommendation-card:hover {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
     transform: translateY(-4px);
+}
+
+[data-theme="dark"] .recommendation-card:hover {
+    background: rgba(31, 41, 55, 0.5);
 }
 
 .recommendation-header {
@@ -300,7 +317,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -310,6 +327,10 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1;
+}
+
+[data-theme="dark"] .slider-nav {
+    background: rgba(31, 41, 55, 0.98);
 }
 
 .slider-nav:hover {

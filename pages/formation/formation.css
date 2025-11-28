@@ -45,6 +45,10 @@
     z-index: 1;
 }
 
+[data-theme="dark"] .timeline-item::before {
+    background: var(--bg-color);
+}
+
 .timeline-item:nth-child(odd) .timeline-date {
     text-align: right;
     grid-column: 1;
@@ -81,10 +85,19 @@
     transition: all 0.3s ease;
 }
 
+[data-theme="dark"] .timeline-content {
+    background: rgba(31, 41, 55, 0.35);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
 .timeline-content:hover {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transform: translateY(-4px);
+}
+
+[data-theme="dark"] .timeline-content:hover {
+    background: rgba(31, 41, 55, 0.5);
 }
 
 .timeline-content h3 {
