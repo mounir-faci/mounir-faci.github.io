@@ -46,6 +46,129 @@
     margin-top: 3rem;
 }
 
+.experience-item {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .experience-item {
+    background: rgba(31, 41, 55, 0.35);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+[data-theme="dark"] .experience-item:hover {
+    background: rgba(31, 41, 55, 0.5);
+}
+
+.experience-header h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-header .company {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0.25rem 0;
+}
+
+.experience-header .company i {
+    margin-right: 0.5rem;
+}
+
+.experience-header .location {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.experience-header .location i {
+    margin-right: 0.5rem;
+}
+
+.experience-details h4 {
+    color: var(--text-color);
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.experience-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-details li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-details li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ===== Education ===== */
+.education {
+    margin-top: 3rem;
+}
+
+.education-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .education-item {
+    background: rgba(31, 41, 55, 0.35);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.education-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+[data-theme="dark"] .education-item:hover {
+    background: rgba(31, 41, 55, 0.5);
+}
+
+.education-header h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-header h3 i {
+    margin-right: 0.75rem;
+    color: var(--primary-color);
+}
+
+.education-header .institution {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0.25rem 0 0.5rem 0;
+}
+
 /* ===== Responsive About ===== */
 @media (max-width: 768px) {
     .skills-grid {
