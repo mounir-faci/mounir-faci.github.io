@@ -96,6 +96,7 @@
     font-size: 1.125rem;
     transition: all 0.3s ease;
     position: absolute;
+    color: var(--text-color);
 }
 
 .theme-icon.sun-icon {
@@ -156,6 +157,7 @@
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    position: relative;
 }
 
 .nav-link i {
@@ -167,9 +169,20 @@
     color: var(--primary-color);
 }
 
-.nav-link.active {
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 4px;
     background-color: var(--primary-color);
-    color: white;
+    border-radius: 2px;
+}
+
+.nav-link.active {
+    color: var(--primary-color);
 }
 
 /* Espacement pour le contenu sous la nav */

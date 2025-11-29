@@ -47,12 +47,20 @@
     
     // Marquer le lien actif dans la navigation
     function setActiveNavLink() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPath = window.location.pathname;
         const navLinks = document.querySelectorAll('.nav-link');
         
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
-            if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            
+            // Vérifier si c'est la page d'accueil
+            if (currentPath === '/' || currentPath === '/index.html') {
+                if (href === '/') {
+                    link.classList.add('active');
+                }
+            }
+            // Vérifier si le chemin actuel correspond au lien
+            else if (href && currentPath.includes(href) && href !== '/') {
                 link.classList.add('active');
             }
         });
